@@ -7,8 +7,6 @@ const ModalsComponent = () => {
 
   return (
     <div className="p-8 space-y-8">
-      <h1 className="text-2xl font-bold text-center">Modals Showcase</h1>
-
       {/* Buttons to open modals */}
       <div className="flex flex-col gap-4 items-center">
         <button
@@ -51,7 +49,7 @@ const ModalsComponent = () => {
 
       {/* Centered Modal */}
       {openModal === "centered" && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+        <div className="fixed inset-0 bg-black bg-opacity-0 flex justify-center items-center">
           <div className="bg-white w-1/3 p-8 rounded-lg shadow-lg text-center">
             <h2 className="text-lg font-semibold">Centered Modal</h2>
             <p className="mt-4 text-gray-600">
