@@ -1,10 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { lazy, Suspense } from "react";
+import { Suspense } from "react";
 import MainLayout from "../layouts";
 import Buttons from "../components/buttons";
 import MainPageComponent from "../components/main_page_component";
 import FormComponent from "../components/forms";
 import Inputs from "../components/inputs";
+import NavBars from "../components/nav_bars";
+import ModalsComponent from "../components/modals";
 
 export default function AppRoutes() {
   return (
@@ -16,8 +18,8 @@ export default function AppRoutes() {
             <Route path="forms" element={<FormComponent />} />
             <Route path="Buttons" element={<Buttons />} />
             <Route path="inputs" element={<Inputs />} />
-            <Route path="navs" element={<></>} />
-            <Route path="modals" element={<></>} />
+            <Route path="navs" element={<NavBars />} />
+            <Route path="modals" element={<ModalsComponent />} />
             <Route path="cards" element={<></>} />
             <Route path="tables" element={<></>} />
             <Route path="loaders" element={<></>} />
