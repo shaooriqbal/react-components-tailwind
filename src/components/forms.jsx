@@ -4,7 +4,7 @@ export default function FormComponent() {
     console.log(" -- on submit --");
   };
   return (
-    <div className="flex flex-col sm:flex-row justify-between space-x-4 p-2">
+    <div className="flex flex-col sm:flex-row sm:justify-between items-center justify-center space-x-4 p-2 space-y-4">
       {/* Left Form */}
       <div className="w-full sm:w-[48%] bg-gray-100 p-4 rounded-md shadow-lg">
         <h2 className="text-xl font-bold mb-4  flex flex-row justify-center items-center">
@@ -93,7 +93,7 @@ export default function FormComponent() {
       </div>
 
       {/* Right Form */}
-      <div className="w-full sm:w-[48%] bg-gray-100 p-4 rounded-md shadow-lg">
+      <div className="w-full sm:w-[48%] bg-gray-100 p-2 rounded-md shadow-lg space-x-4">
         <h2 className="text-xl font-bold mb-4 flex flex-row justify-center items-center">
           Login
         </h2>

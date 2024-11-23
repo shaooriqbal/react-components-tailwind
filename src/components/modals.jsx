@@ -31,7 +31,7 @@ const ModalsComponent = () => {
 
       {/* Basic Modal */}
       {openModal === "basic" && (
-        <div className="fixed inset-0 bg-black bg-transparent flex justify-center items-center">
+        <div className="fixed inset-x-0 inset-y-0 bg-black bg-transparent flex justify-center items-center">
           <div className="bg-white w-1/3 p-6 rounded-lg shadow-lg flex flex-col">
             <h2 className="text-lg font-semibold">Basic Modal</h2>
             <p className="mt-4 text-gray-600">
